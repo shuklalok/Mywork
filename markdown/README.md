@@ -7,6 +7,8 @@
 **BOLD** __BOLD__
 ### Italic
 *ILATIC* _ILATIC_
+### Strikethrough
+~~STRIKETHROUGH~~
 ### Mix
 **Mix *Bold Italic***
 ### Link
@@ -41,6 +43,11 @@ An example of inline code
 1. Ordered List 2
    1. List 2a
    1. List 2b
+### List task
+- [x] @mentions, #refs, [links](), **formatting**, and <del>tags</del> supported
+- [x] list syntax required (any unordered or ordered list supported)
+- [x] this is a complete item
+- [ ] this is an incomplete item
 ### Table
 First Header | Second Header
 ------------ | -------------
