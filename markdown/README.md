@@ -48,6 +48,10 @@ An example of inline code
 - [x] list syntax required (any unordered or ordered list supported)
 - [x] this is a complete item
 - [ ] this is an incomplete item
+### @mention
+    Mentioning @shuklalok
+### #References
+    #shuklalok/Mywork/edit/master/markdown/README.md
 ### Table
 First Header | Second Header
 ------------ | -------------
