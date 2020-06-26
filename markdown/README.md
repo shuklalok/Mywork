@@ -49,9 +49,9 @@ An example of inline code
 - [x] this is a complete item
 - [ ] this is an incomplete item
 ### @mention
-   Mentioning @shuklalok
+@shuklalok
 ### #References
-   shuklalok/Mywork/edit/master/markdown#53
+   https://github.com/shuklalok/Mywork/edit/master/markdown/README.md#53
 ### Table
 First Header | Second Header
 ------------ | -------------
