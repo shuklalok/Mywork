@@ -51,7 +51,7 @@ An example of inline code
 ### @mention
 @shuklalok
 ### #References
-   https://github.com/shuklalok/Mywork/edit/master/markdown/README.md#53
+   shuklalok/Mywork/edit/master/markdown/README.md#53
 ### Table
 First Header | Second Header
 ------------ | -------------
