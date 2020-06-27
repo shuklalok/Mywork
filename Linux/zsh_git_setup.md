@@ -34,6 +34,11 @@ source ~/.zshrc
 ```
 ## Rg not working
 ```sudo apt install ripgrep```
+## Use ripgrep with fzf
+Add:
+```
+alias rgf="rg --files | fzf"
+```
 ## tags not working
 ```sudo apt install ctags```
 ## Auto Capitalization
