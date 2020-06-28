@@ -36,6 +36,11 @@ ls
 ./install
 source ~/.zshrc
 ```
+## Install ```cat``` like ```bat```
+```
+wget https://github.com/sharkdp/bat/releases/download/v0.15.4/bat_0.15.4_amd64.deb
+sudo dpkg -i bat_0.8.0_amd64.deb
+```
 ## Rg not working
 ```sudo apt install ripgrep```
 ## Use ripgrep with fzf
