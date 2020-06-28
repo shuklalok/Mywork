@@ -43,12 +43,16 @@ sudo dpkg -i bat_0.8.0_amd64.deb
 ```
 ## Rg not working
 ```sudo apt install ripgrep```
-## Use ripgrep with fzf
+## Use Rg with fzf
 Add:
 ```
 alias rgf="rg --files | fzf"
 ```
 If errors use ```rg --files -j1| fzf```
+## Use vim, Rg and fzf
+```
+alias rfv="vim $(rg --files -j1| fzf)"
+```
 ## tags not working
 ```sudo apt install ctags```
 ## Auto Capitalization
