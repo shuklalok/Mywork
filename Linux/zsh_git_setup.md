@@ -7,11 +7,6 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/
 git clone https://github.com/zsh-users/zsh-autosuggestions.git ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
 sed -i '/plugins=(git/s/)$/ zsh-autosuggestions zsh-syntax-highlighting)/' ~/.zshrc
 sed -i 's/robbyrussell/arrow/' ~/.zshrc
-
-curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-git clone https://github.com/shuklalok/dot-files.git ~/dot-files
-mkdir -p ~/.config/nvim; cp ~/dot-files/.config/nvim/init.vim ~/.config/nvim/
-vim +'PlugInstall --sync' +qa
 ```
 ## GIT Pager Problem
 - Add ```export LESS=-JMQRiFX``` in ~/.zshrc
@@ -21,6 +16,10 @@ vim +'PlugInstall --sync' +qa
 sudo apt remove vim
 sudo apt purge vim
 sudo apt install neovim
+curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+git clone https://github.com/shuklalok/dot-files.git ~/dot-files
+mkdir -p ~/.config/nvim; cp ~/dot-files/.config/nvim/init.vim ~/.config/nvim/
+vim +'PlugInstall --sync' +qa
 ```
 ## Font problem
 ```
