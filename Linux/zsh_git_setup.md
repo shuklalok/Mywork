@@ -48,6 +48,7 @@ Add:
 ```
 alias rgf="rg --files | fzf"
 ```
+If errors use ```rg --files -j1| fzf```
 ## tags not working
 ```sudo apt install ctags```
 ## Auto Capitalization
@@ -86,4 +87,12 @@ git checkout new-branch
 git rebase master
 git push origin master
 git push origin new-branch 
+```
+## Track a remote branch
+```
+git clone <origin>
+git remote add upstream <upstream>
+git fetch --all
+git checkout origin/remote-branch-to-sneak
+git checkout origin/remote-branch-to-track
 ```
