@@ -50,8 +50,11 @@ alias rgf="rg --files | fzf"
 ```
 If errors use ```rg --files -j1| fzf```
 ## Use vim, Rg and fzf
+Add a function to ~.zshrc which can be called from commandline.
 ```
-alias rfv="vim $(rg --files -j1| fzf)"
+rfv() {
+  vim $(rg --files -j1 | fzf)
+}
 ```
 ## tags not working
 ```sudo apt install ctags```
