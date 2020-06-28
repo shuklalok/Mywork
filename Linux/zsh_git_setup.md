@@ -1,13 +1,16 @@
 ## ZSH CONFIG
 ```
 sudo apt install zsh git curl neovim fonts-powerline fonts-firacode rofi feh lxappearance i3lock-fancy
+
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 git clone https://github.com/zsh-users/zsh-autosuggestions.git ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
 sed -i '/plugins=(git/s/)$/ zsh-autosuggestions zsh-syntax-highlighting)/' ~/.zshrc
 sed -i 's/robbyrussell/arrow/' ~/.zshrc
-sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \\n
-https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+
+curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+git clone https://github.com/shuklalok/dot-files.git ~/dot-files
+mkdir -p ~/.config/nvim; cp ~/dot-files/.config/nvim/init.vim ~/.config/nvim/
 vim +'PlugInstall --sync' +qa
 ```
 ## GIT Pager Problem
