@@ -52,3 +52,14 @@ zstyle ':completion:*' list-colors "${(@s.:.)LS_COLORS}"
 autoload -Uz compinit
 compinit
 ```
+### Solariezed dircolors
+```
+wget https://raw.githubusercontent.com/seebi/dircolors-solarized/master/dircolors.256dark
+mv dircolors.256dark .dir_colors
+```
+Add in ~/.zshrc
+```
+if [ -f ~/.dir_colors ]; then
+  eval `dircolors ~/.dir_colors`
+fi
+```
