@@ -28,8 +28,18 @@ git push origin new-branch
 git clone <origin>
 git remote add upstream <upstream>
 git fetch --all
-git checkout origin/remote-branch-to-sneak
-git checkout origin/remote-branch-to-track
+git checkout origin/remote-branch (to sneak the changes)
+git checkout remote-branch (to track the changes)
+```
+## Fetch a Pull Request
+```
+git fetch origin pull/ID/head:BRANCHNAME
+```
+```ID``` is PR id
+```BRANCHNAME``` is new branch you want to create.
+Then:
+```
+git checkout BRANCHNAME
 ```
 ## Delete a local branch
 ```
