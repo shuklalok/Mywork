@@ -72,3 +72,6 @@ Delete the remote branch:
 ```
 git push origin --delete <old_name>
 ```
+## Restoring lost commits
+```git reflog```
+If you accidentally reset to an older commit, or rebase wrongly, or any other operation that visually "removes" commits, you can use the reflog to see where you were before and ```git reset --hard``` back to that ref to restore your previous state. ```refs``` are not just the commits but the entire history behind it.
