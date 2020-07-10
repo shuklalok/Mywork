@@ -41,12 +41,13 @@ Then:
 ```
 git checkout BRANCHNAME
 ```
-## Delete a local branch
+## Delete a branch
+### Local
 ```
 git branch -d <branch-name>
 git branch -D <branch-name>
 ```
-## Delete a remote branch
+### Remote
 ```
 git push origin --delete <branch-name>
 ```
@@ -55,3 +56,18 @@ git push origin --delete <branch-name>
 git commit --amend (To change the description)
 git commit --no-amend (Without changing the description)
 ```
+## Rename a git branch
+### Local
+```
+git checkout <old_name>
+git branch -m <new_name>
+```
+Have already pushed the <old_name> to the remote?
+Next steps is to rename the remote branch:
+### Remote
+```
+git push origin -u <new_name>
+```
+Delete the remote branch:
+git push origin --delete <old_name>
+
