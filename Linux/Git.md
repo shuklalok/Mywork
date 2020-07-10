@@ -69,5 +69,6 @@ Next steps is to rename the remote branch:
 git push origin -u <new_name>
 ```
 Delete the remote branch:
+```
 git push origin --delete <old_name>
-
+```
