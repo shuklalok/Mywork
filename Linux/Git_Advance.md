@@ -15,6 +15,20 @@ For each one, asks if you'd like to discard. Basically reverting your local work
 ```bash
 (1/1) Discard this hunk from worktree [y,n,q,a,d,e,?]?
 ```
+### ```git stash list```
+Returns output as below:
+```
+stash@{2}: WIP #1
+stash@{1}: WIP #1
+stash@{0}: WIP #1
+```
+- ```git stash apply stash@{0}``` applies and leaves the the stash. 
+- ```git stash pop stash@{0}``` applies and deletes the stash.
+- ```git stash drop stash@{0}``` manually deletes the stash.
+### ```git archive``` to compress your code
+- ```git archive --format zip --output master_branch.zip master```
+- ```git archive --format zip --output version_0.1.1.zip "0.1.1"```
+### 
 ### Time-based revision references
 - ```git diff HEAD@{yesterday}```
 - ```git diff HEAD@{'2 months ago'}```
