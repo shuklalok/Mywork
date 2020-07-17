@@ -27,3 +27,21 @@ Except the first ```pick``` change all to ```squash``` (or ```s```):
   s 8105f93 D 4 file
 ```
 Save and Exit, another editor will open to facilitate final commit message.
+### After push
+Assuming we want to combine 4 commits,
+1. Squash commits locally
+   ```
+   git rebase -i origin/my-branch~4 my-branch
+   ```
+   and then force push
+   ```
+   git push origin +my-branch
+   ```
+   - ```+``` forces only the refspec which is prefixed by it.
+   - ```--force``` will force all the refspecs being pushed.
+1. In my-branch
+   ```
+   git reset --soft HEAD~4
+   git commit
+   git push --force origin my_branch
+   ```
