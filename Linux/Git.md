@@ -54,7 +54,7 @@ git push origin --delete <branch-name>
 ## Avoid a new commit
 ```
 git commit --amend (To change the description)
-git commit --no-amend (Without changing the description)
+git commit --amend --no-edit (Without changing the description)
 ```
 ## Rename a git branch
 ### Local
