@@ -28,6 +28,8 @@ stash@{0}: WIP #1
 ### ```git archive``` to compress your code
 - ```git archive --format zip --output master_branch.zip master```
 - ```git archive --format zip --output version_0.1.1.zip "0.1.1"```
+### ```git archive``` with ```git stash create``` creates archive with latest (uncommitted) or HEAD
+```LATEST=`git stash create`; git archive --format tar -o output.tar ${LATEST:-HEAD}```
 ### 
 ### Time-based revision references
 - ```git diff HEAD@{yesterday}```
