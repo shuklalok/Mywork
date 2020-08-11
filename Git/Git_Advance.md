@@ -49,6 +49,8 @@ WARNINIG: It includes the current branch in the output.
 - Show what local branches haven't been merged to HEAD
 
 ```$ git branch --no-merged | grep -v '\\*\\|master\\|develop'```
+#### Prune tracking branches not on the remote.
+```git remote prune origin```
 ## Tricks
 ### Forgot something in last commit?
 - Stage the changes you want incorporated in the previous commit
