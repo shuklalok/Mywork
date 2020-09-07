@@ -30,6 +30,8 @@ git remote add upstream <upstream>
 git fetch --all
 git checkout origin/remote-branch (to sneak the changes)
 git checkout remote-branch (to track the changes)
+OR
+git checkout --track origin/remote-branch
 ```
 ## Fetch a Pull Request
 ```
