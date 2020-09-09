@@ -1,3 +1,21 @@
+## ```.gitconfig``` in ``$HOME```
+```bash
+❯ cat ~/.gitconfig     
+[user]
+  name = FName LName
+  email = userid@subdomain.domain
+[http]
+  sslcainfo = ~/.ssh/<cert>.pem
+[credential]
+  helper = cache --timeout 3600
+[core]
+  editor = vim
+```
+On Shared machine where you do not want to setup ```.gitconfig``` set origin with userid only, commands will be prompting for password.
+```
+git remote set-url origin https://shuklalok@github.com/shuklalok/dot-files.git
+```
+
 ## Git remote setup
 ```
 git remote -v
