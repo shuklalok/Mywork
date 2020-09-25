@@ -103,6 +103,14 @@ $ git checkout --theirs conflict.txt
 $ git add conflict.txt
 $ git commit
 ```
+For a repo
+```
+git pull -s recursive -X theirs <remoterepo or other repo>
+```
+Or, simply, for the default repository:
+
+git pull -X theirs
+```
 Sometimes during a merge you want to take a file from one side wholesale.
 The following aliases expose the ours and theirs commands which let you
 pick a file(s) from the current branch or the merged branch respectively.
