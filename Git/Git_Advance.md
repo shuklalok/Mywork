@@ -122,6 +122,15 @@ all of ours:
 git checkout --ours .
 git add .
 ```
+### Too many conflicts?
+\- | \-
+------------ | -------------
+Search for all conflicting files | ```grep -lr '<<<<<<<' .```
+Accept local/our version | ```git checkout --ours PATH/FILE```
+Accept remote/other-branch version | ```git checkout --theirs PATH/FILE```
+Multiple files? Accept local/our version | ```grep -lr '<<<<<<<' . \| xargs git checkout --ours```
+Multiple files? Accept remote/other-branch version | ```grep -lr '<<<<<<<' . \| xargs git checkout --theirs```
+
 Sometimes during a merge you want to take a file from one side wholesale.
 The following aliases expose the ours and theirs commands which let you
 pick a file(s) from the current branch or the merged branch respectively.
