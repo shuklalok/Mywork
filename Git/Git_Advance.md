@@ -64,9 +64,9 @@ Undo last commit and bring changes back into staging (i.e. reset to the commit o
 undo last commit and destroy the changes you made (i.e. reset to the commit one before HEAD)
 ```$ git reset --hard HEAD^```
 ### Now you think you should have been working in another branch? 
-```$ git stash```
+```$ git stash; git stash branch new-branch-name```
+
 Takes staged changes and 'stashes' them for later, and reverts to HEAD.
-```$ git stash branch new-branch-name ```
 Creates and switches to a new branch, takes the stashed changes and stages them in.
 ### which commit broke the build?
 Made lots of local commits and haven't run any tests?
