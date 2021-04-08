@@ -58,6 +58,8 @@ WARNINIG: It includes the current branch in the output.
 ```$ git commit --amend -C HEAD```
 - Or use ```-m``` to make a new message
 ```$ git commit --amend -m 'I forgot before'```
+#### ... and no edit in commit message is required ...
+```$ git commit --amend --no-edit```
 ### Did not mean to commit yet?
 Undo last commit and bring changes back into staging (i.e. reset to the commit one before HEAD)
 ```$ git reset --soft HEAD^```
