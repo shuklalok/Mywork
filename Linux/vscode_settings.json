@@ -1,0 +1,109 @@
+{
+    "remote.SSH.remotePlatform": {
+        "dev-env": "linux",
+        "dev-env2": "linux"
+    },
+    "files.associations": {
+        "**/*.yaml": "ansible",
+        "**/*.yml": "ansible"
+    },
+    "gitlens.remotes": [
+        {
+            "domain": "<github-domain-name>",
+            "type": "GitHub"
+        }
+    ],
+    "editor.rulers": [
+        79,
+        99,
+        119
+    ],
+    "[ansible]": {
+        "editor.detectIndentation": false,
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2
+    },
+    "vim.foldfix": true,
+    "vim.smartcase": false,
+    "vim.useSystemClipboard": true,
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "u"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "undo",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<C-r>"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "redo",
+                    "args": []
+                }
+            ]
+        }
+    ],
+    "terminal.integrated.shell.linux": "/usr/bin/zsh",
+    "gitlens.gitCommands.skipConfirmations": [
+        "fetch:command",
+        "stash-push:command",
+        "switch:command",
+        "switch:menu"
+    ],
+    "workbench.colorTheme": "One Dark Pro",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 15,
+    "editor.renderWhitespace": "all",
+    "terminal.integrated.copyOnSelection": true,
+    "indentRainbow.colors": [
+
+        "rgba(255,255,64,0.07)",
+        "rgba(127,255,127,0.07)",
+        "rgba(255,127,255,0.07)",
+        "rgba(79,236,236,0.07)"
+    ],
+    "indentRainbow.errorColor": "rgba(128,32,32,0.6)",
+    "indentRainbow.tabmixColor": "rgba(128,32,96,0.6)",
+    "workbench.iconTheme": "material-icon-theme",
+    "templateFinder.extension.activated": true,
+    "cSpell.enableFiletypes": [
+        "ansible"
+    ],
+    "cSpell.enabled": true,
+    "editor.minimap.enabled": false,
+    "gitlens.advanced.telemetry.enabled": false,
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
+    "files.trimTrailingWhitespace": true,
+    "files.trimFinalNewlines": true,
+    "vim.hlsearch": true,
+    "cSpell.userWords": [
+        "jsonpath",
+        "kubectl",
+        "kubernetes",
+        "tostring"
+    ],
+    "vim.easymotion": true,
+    "projectManager.git.baseFolders": [
+        "/home/shuklalok/Git/automation"
+    ],
+    "diffEditor.renderSideBySide": false,
+    "remote.SSH.configFile": "C:\\Users\\shuklalok\\.ssh\\config",
+    "workbench.editorAssociations": [
+        {
+            "viewType": "jupyter.notebook.ipynb",
+            "filenamePattern": "*.ipynb"
+        }
+    ]
+    //"go.useCodeSnippetsOnFunctionSuggestWithoutType": true,
+    //"go.autocompleteUnimportedPackages": true
+}
