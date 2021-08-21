@@ -43,6 +43,10 @@ git push origin new-branch
 ```
 ## Track a remote branch
 ```
+git checkout -b a_branch origin/a_branch
+```
+OR
+```
 git clone <origin>
 git remote add upstream <upstream>
 git fetch --all
