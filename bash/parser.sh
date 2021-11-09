@@ -17,3 +17,4 @@ esac
 done
 echo $option_1
 echo $option_2
+# https://stackoverflow.com/questions/192249/how-do-i-parse-command-line-arguments-in-bash
