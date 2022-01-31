@@ -6,9 +6,9 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 ### Markdown
 
-NAME | AGE
------|-----
-ALOK | 0
+|NAME | AGE |
+|-----|-----|
+|ALOK | 0 |
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
