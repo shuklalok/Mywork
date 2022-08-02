@@ -20,7 +20,7 @@ openssl req -new -x509 -days 365 -key ca.key -subj "/C=IN/ST=KA/L=BL/O=MyOrg, In
 ```
 Create a server CSR with 'localhost' in CN
 ```bash
-openssl req -newkey rsa:2048 -nodes -keyout server.key -subj "/C=IN/ST=KA/L=BL/O=Dell, Inc./CN=localhost" -out server.csr
+openssl req -newkey rsa:2048 -nodes -keyout server.key -subj "/C=IN/ST=KA/L=BL/O=MyOrg, Inc./CN=localhost" -out server.csr
 ```
 Finally sign server cert by CA and pass the subjectAltName when you signing server cert
 ```bash
