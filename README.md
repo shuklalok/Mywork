@@ -1,5 +1,5 @@
 # Mywork
-These are some of my original works.
+These are some of my works.
 
 
 NAME | AGE
