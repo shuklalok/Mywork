@@ -1,8 +1,8 @@
 {
     "vs-kubernetes": {
-        "vs-kubernetes.minikube-path.linux": "/home/shukla20/.vs-kubernetes/tools/minikube/linux-amd64/minikube",
-        "vs-kubernetes.helm-path.linux": "/home/shukla20/.vs-kubernetes/tools/helm/linux-amd64/helm",
-        "vs-kubernetes.draft-path.linux": "/home/shukla20/.vs-kubernetes/tools/draft/linux-amd64/draft"
+        "vs-kubernetes.minikube-path.linux": "/home/shukla/.vs-kubernetes/tools/minikube/linux-amd64/minikube",
+        "vs-kubernetes.helm-path.linux": "/home/shukla/.vs-kubernetes/tools/helm/linux-amd64/helm",
+        "vs-kubernetes.draft-path.linux": "/home/shukla/.vs-kubernetes/tools/draft/linux-amd64/draft"
     },
     "remote.SSH.remotePlatform": {
         "<hostname>": "linux"
