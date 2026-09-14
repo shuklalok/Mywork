@@ -1,0 +1,31 @@
+# Default owner for the entire repository
+* @shuklalok
+
+# Platform-specific owners
+Linux/ @shuklalok
+Windows/ @shuklalok
+
+# Language-specific owners
+C_Files/ @shuklalok
+*.c @shuklalok
+*.h @shuklalok
+
+# Go code
+tls/ @shuklalok
+*.go @shuklalok
+
+# Scripts and configuration
+bash/ @shuklalok
+*.sh @shuklalok
+*.bat @shuklalok
+*.ahk @shuklalok
+
+# Documentation
+*.md @shuklalok
+markdown/ @shuklalok
+Git/ @shuklalok
+
+# Configuration files
+.zshrc @shuklalok
+_config.yml @shuklalok
+*.json @shuklalok
