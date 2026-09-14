@@ -1,0 +1,133 @@
+@startuml a_sequence_diagram
+
+<style>
+    sequenceDiagram {
+        participant {
+            BackgroundColor #EEEBDC
+            BorderColor Black
+            FontSize 11
+            Padding 5
+        }
+        actor {
+            BackgroundColor #EEEBDC
+            BorderColor Black
+            FontSize 12
+        }
+        boundary {
+            BackgroundColor #EEEBDC
+            FontSize 12
+        }
+        message {
+            FontSize 11
+            LineThickness 1.5
+        }
+        note {
+            BackgroundColor #FFFFE0
+            FontSize 10
+        }
+        title {
+            FontSize 18
+        }
+        divider {
+            FontSize 13
+        }
+        group {
+            BorderColor Teal
+        }
+    }
+</style>
+
+title
+    A Sequence
+end title
+
+
+!pragma teoz true
+box "A Box" #LightCyan
+actor "Customer" as customer
+
+box A Client Service #LightGray
+boundary "User Interface" as UI
+box A Server #LightBlue
+participant "ServiceA" as serviceA #Gold
+participant "ServiceB" as serviceB #LightCyan
+end box
+end box
+end box
+
+Autonumber
+
+== Initialization Phase ==
+customer -> UI: Connect
+activate UI
+note right of UI: User initiates connection
+UI -> UI: Validate input
+UI -> serviceA: Connect(credential)
+activate serviceA
+note right of serviceA: Authentication request
+
+== Authentication Flow ==
+serviceA -> serviceA: Validate credentials
+alt Valid credentials
+    serviceA -> serviceB: Initialize session
+    activate serviceB
+    serviceB --> serviceA: Session token
+    deactivate serviceB
+    serviceA --> UI: Authentication success
+    note right of serviceA: Return session token
+else Invalid credentials
+    serviceA --x UI: Authentication failed
+    note right of serviceA: Invalid username/password
+    deactivate serviceA
+    UI --> customer: Error message
+    deactivate UI
+end
+
+== Data Processing ==
+UI -> serviceA: Request data
+activate serviceA
+serviceA -> serviceB: Query database
+activate serviceB
+loop Process multiple records
+    serviceB -> serviceB: Fetch record
+    serviceB --> serviceA: Record data
+end
+serviceB --> serviceA: Complete result
+deactivate serviceB
+
+== Response Handling ==
+alt Data found
+    serviceA -> serviceA: Format response
+    serviceA --> UI: Data response
+    note right of serviceA: JSON formatted data
+    UI -> UI: Render data
+    UI --> customer: Display results
+else No data found
+    serviceA --> UI: No data message
+    UI --> customer: Empty state
+end
+deactivate serviceA
+deactivate UI
+
+== Error Scenarios ==
+opt Connection timeout
+    customer -> UI: Retry request
+    UI -> serviceA: Reconnect
+    serviceA --x UI: Timeout error
+    UI --> customer: Connection timeout
+end
+
+== Cleanup ==
+customer -> UI: Disconnect
+UI -> serviceA: Close session
+activate serviceA
+serviceA -> serviceB: Terminate session
+activate serviceB
+serviceB --> serviceA: Session closed
+deactivate serviceB
+serviceA --> UI: Disconnect confirmed
+deactivate serviceA
+UI --> customer: Goodbye
+deactivate UI
+
+@enduml
